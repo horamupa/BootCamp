@@ -17,6 +17,10 @@
 		8D0B4EBE291A9BAC00B97148 /* BackgroundThreadBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B4EBD291A9BAC00B97148 /* BackgroundThreadBootcamp.swift */; };
 		8D0B4EC0291D245300B97148 /* SubscriberBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B4EBF291D245300B97148 /* SubscriberBootcamp.swift */; };
 		8DB50DA62926567E00E8D190 /* FileManagerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB50DA52926567E00E8D190 /* FileManagerBootcamp.swift */; };
+		8DE12EE8292BCD74000FE38F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EE7292BCD74000FE38F /* HomeView.swift */; };
+		8DE12EEA292BCDE9000FE38F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EE9292BCDE9000FE38F /* HomeViewModel.swift */; };
+		8DE12EEC292BCE21000FE38F /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EEB292BCE21000FE38F /* ImageModel.swift */; };
+		8DE12EEE292BCEC8000FE38F /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EED292BCEC8000FE38F /* DownloadManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		8D0B4EBD291A9BAC00B97148 /* BackgroundThreadBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadBootcamp.swift; sourceTree = "<group>"; };
 		8D0B4EBF291D245300B97148 /* SubscriberBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberBootcamp.swift; sourceTree = "<group>"; };
 		8DB50DA52926567E00E8D190 /* FileManagerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerBootcamp.swift; sourceTree = "<group>"; };
+		8DE12EE7292BCD74000FE38F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8DE12EE9292BCDE9000FE38F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8DE12EEB292BCE21000FE38F /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		8DE12EED292BCEC8000FE38F /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 				8D0B4EBD291A9BAC00B97148 /* BackgroundThreadBootcamp.swift */,
 				8D0B4EBF291D245300B97148 /* SubscriberBootcamp.swift */,
 				8DB50DA52926567E00E8D190 /* FileManagerBootcamp.swift */,
+				8DE12EE2292BCD14000FE38F /* DownloadingDataCombineCache */,
 				8D0B4EB5291963F000B97148 /* FruitsContainer.xcdatamodeld */,
 				8D0B4E882919250000B97148 /* Assets.xcassets */,
 				8D0B4E8A2919250000B97148 /* Preview Content */,
@@ -83,6 +92,49 @@
 				8D0B4E8B2919250000B97148 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8DE12EE2292BCD14000FE38F /* DownloadingDataCombineCache */ = {
+			isa = PBXGroup;
+			children = (
+				8DE12EE6292BCD53000FE38F /* Utilites */,
+				8DE12EE5292BCD4D000FE38F /* ViewModel */,
+				8DE12EE4292BCD42000FE38F /* View */,
+				8DE12EE3292BCD3C000FE38F /* Model */,
+			);
+			path = DownloadingDataCombineCache;
+			sourceTree = "<group>";
+		};
+		8DE12EE3292BCD3C000FE38F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DE12EEB292BCE21000FE38F /* ImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8DE12EE4292BCD42000FE38F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DE12EE7292BCD74000FE38F /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8DE12EE5292BCD4D000FE38F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8DE12EE9292BCDE9000FE38F /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8DE12EE6292BCD53000FE38F /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				8DE12EED292BCEC8000FE38F /* DownloadManager.swift */,
+			);
+			path = Utilites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,10 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DE12EEC292BCE21000FE38F /* ImageModel.swift in Sources */,
+				8DE12EE8292BCD74000FE38F /* HomeView.swift in Sources */,
 				8D0B4E87291924FF00B97148 /* ContentView.swift in Sources */,
 				8D0B4EBE291A9BAC00B97148 /* BackgroundThreadBootcamp.swift in Sources */,
+				8DE12EEA292BCDE9000FE38F /* HomeViewModel.swift in Sources */,
 				8D0B4EC0291D245300B97148 /* SubscriberBootcamp.swift in Sources */,
 				8D0B4EB4291962D800B97148 /* CoreDataBootcamp.swift in Sources */,
+				8DE12EEE292BCEC8000FE38F /* DownloadManager.swift in Sources */,
 				8DB50DA62926567E00E8D190 /* FileManagerBootcamp.swift in Sources */,
 				8D0B4EB7291963F000B97148 /* FruitsContainer.xcdatamodeld in Sources */,
 				8D0B4E932919251000B97148 /* ArraysBootCamp.swift in Sources */,
