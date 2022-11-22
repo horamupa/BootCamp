@@ -10,7 +10,8 @@ import SwiftUI
 struct ImageModel: Identifiable, Codable {
     
     let id: Int
-    let name: String
+    let title: String
     let url: String
+    let thumbnailUrl: String
     
 }

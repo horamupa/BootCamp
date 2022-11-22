@@ -21,6 +21,10 @@
 		8DE12EEA292BCDE9000FE38F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EE9292BCDE9000FE38F /* HomeViewModel.swift */; };
 		8DE12EEC292BCE21000FE38F /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EEB292BCE21000FE38F /* ImageModel.swift */; };
 		8DE12EEE292BCEC8000FE38F /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EED292BCEC8000FE38F /* DownloadManager.swift */; };
+		8DE12EF3292CF386000FE38F /* DownloadImagesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EF2292CF386000FE38F /* DownloadImagesRow.swift */; };
+		8DE12EF6292CF3E6000FE38F /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EF5292CF3E6000FE38F /* DeveloperPreview.swift */; };
+		8DE12EF8292CFBC6000FE38F /* DownloadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EF7292CFBC6000FE38F /* DownloadImageView.swift */; };
+		8DE12EFB292CFCD9000FE38F /* DownloadedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EFA292CFCD9000FE38F /* DownloadedImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		8DE12EE9292BCDE9000FE38F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8DE12EEB292BCE21000FE38F /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		8DE12EED292BCEC8000FE38F /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		8DE12EF2292CF386000FE38F /* DownloadImagesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImagesRow.swift; sourceTree = "<group>"; };
+		8DE12EF5292CF3E6000FE38F /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
+		8DE12EF7292CFBC6000FE38F /* DownloadImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageView.swift; sourceTree = "<group>"; };
+		8DE12EFA292CFCD9000FE38F /* DownloadedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		8DE12EE2292BCD14000FE38F /* DownloadingDataCombineCache */ = {
 			isa = PBXGroup;
 			children = (
+				8DE12EF4292CF3C3000FE38F /* Extension */,
 				8DE12EE6292BCD53000FE38F /* Utilites */,
 				8DE12EE5292BCD4D000FE38F /* ViewModel */,
 				8DE12EE4292BCD42000FE38F /* View */,
@@ -117,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				8DE12EE7292BCD74000FE38F /* HomeView.swift */,
+				8DE12EF2292CF386000FE38F /* DownloadImagesRow.swift */,
+				8DE12EF7292CFBC6000FE38F /* DownloadImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				8DE12EE9292BCDE9000FE38F /* HomeViewModel.swift */,
+				8DE12EFA292CFCD9000FE38F /* DownloadedImageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -135,6 +147,14 @@
 				8DE12EED292BCEC8000FE38F /* DownloadManager.swift */,
 			);
 			path = Utilites;
+			sourceTree = "<group>";
+		};
+		8DE12EF4292CF3C3000FE38F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8DE12EF5292CF3E6000FE38F /* DeveloperPreview.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,16 +229,20 @@
 			files = (
 				8DE12EEC292BCE21000FE38F /* ImageModel.swift in Sources */,
 				8DE12EE8292BCD74000FE38F /* HomeView.swift in Sources */,
+				8DE12EF3292CF386000FE38F /* DownloadImagesRow.swift in Sources */,
 				8D0B4E87291924FF00B97148 /* ContentView.swift in Sources */,
 				8D0B4EBE291A9BAC00B97148 /* BackgroundThreadBootcamp.swift in Sources */,
 				8DE12EEA292BCDE9000FE38F /* HomeViewModel.swift in Sources */,
+				8DE12EF8292CFBC6000FE38F /* DownloadImageView.swift in Sources */,
 				8D0B4EC0291D245300B97148 /* SubscriberBootcamp.swift in Sources */,
+				8DE12EFB292CFCD9000FE38F /* DownloadedImageViewModel.swift in Sources */,
 				8D0B4EB4291962D800B97148 /* CoreDataBootcamp.swift in Sources */,
 				8DE12EEE292BCEC8000FE38F /* DownloadManager.swift in Sources */,
 				8DB50DA62926567E00E8D190 /* FileManagerBootcamp.swift in Sources */,
 				8D0B4EB7291963F000B97148 /* FruitsContainer.xcdatamodeld in Sources */,
 				8D0B4E932919251000B97148 /* ArraysBootCamp.swift in Sources */,
 				8D0B4E85291924FF00B97148 /* BootCampApp.swift in Sources */,
+				8DE12EF6292CF3E6000FE38F /* DeveloperPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

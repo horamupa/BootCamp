@@ -11,7 +11,7 @@ import SwiftUI
 struct BootCampApp: App {
     var body: some Scene {
         WindowGroup {
-            FileManagerBootcamp()
+            HomeView()
         }
     }
 }

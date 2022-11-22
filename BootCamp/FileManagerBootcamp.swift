@@ -142,7 +142,6 @@ class FileManagerViewModel: ObservableObject {
         image = FM.getImage(name: imageName)
     }
     
-    #warning("refactor this later")
     func saveImage() {
         guard
             let image = image

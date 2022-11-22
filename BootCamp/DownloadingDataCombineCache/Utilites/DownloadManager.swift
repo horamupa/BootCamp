@@ -11,36 +11,39 @@ import Combine
 class DownloadManager: ObservableObject {
     
     static let shared = DownloadManager()
+    private let URLPhoto = "https://jsonplaceholder.typicode.com/photos"
     
-    private init() { }
+    private init() {
+       downloadData()
+    }
     
-    @Published var downloadedData: [ImageModel]? = nil
-    var cancellable = Set<Cancellable>
+    @Published var downloadedData: [ImageModel] = []
+    var cancellables = Set<AnyCancellable>()
     
-    func downloadData() throws {
+    func downloadData() {
         guard
-        let url = URL(string: "")
+        let url = URL(string: URLPhoto)
         else {
-            throw URLError(.badURL)
+            print("\(URLError(.badURL))")
+            return
         }
+        
         URLSession.shared.dataTaskPublisher(for: url)
             .subscribe(on: DispatchQueue.global(qos: .background))
             .receive(on: DispatchQueue.main)
             .tryMap(combineHandler)
             .decode(type: [ImageModel].self, decoder: JSONDecoder())
-            .sink { compelation in
-                switch {
+            .sink { (compeletion) in
+                switch compeletion {
                 case .finished:
                     break
-                case .failure
+                case .failure(let error):
+                    print("Error downloading data: \(error.localizedDescription)")
                 }
-                
-            } receiveValue: { [weak self] recivedData in
-                self?.downloadedData = recivedData
+            } receiveValue: { [weak self] result in
+                self?.downloadedData = result
             }
-            .
-
-        
+            .store(in: &cancellables)
     }
     
     func combineHandler(output: URLSession.DataTaskPublisher.Output) throws -> Data {

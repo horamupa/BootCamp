@@ -14,13 +14,21 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                VStack {
-                    ForEach(vm.imageArray) { image in
-                        
+                List {
+                    if vm.imageArray.count > 0 {
+                        ForEach(vm.imageArray) { image in
+                            DownloadImagesRow(image: image)
+                        }
+                    } else {
+                        VStack {
+                            Text("Loading data...")
+                                .font(.headline)
+                            ProgressView()
+                        }
                     }
                 }
+                .navigationTitle("DownloadCacheModel")
             }
-            .navigationTitle("DownloadCacheModel")
         }
         
     }
