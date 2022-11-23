@@ -25,6 +25,8 @@
 		8DE12EF6292CF3E6000FE38F /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EF5292CF3E6000FE38F /* DeveloperPreview.swift */; };
 		8DE12EF8292CFBC6000FE38F /* DownloadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EF7292CFBC6000FE38F /* DownloadImageView.swift */; };
 		8DE12EFB292CFCD9000FE38F /* DownloadedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EFA292CFCD9000FE38F /* DownloadedImageViewModel.swift */; };
+		8DE12EFD292D1D52000FE38F /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EFC292D1D52000FE38F /* ImageCacheManager.swift */; };
+		8DE12EFF292D2269000FE38F /* ImageFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EFE292D2269000FE38F /* ImageFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		8DE12EF5292CF3E6000FE38F /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		8DE12EF7292CFBC6000FE38F /* DownloadImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageView.swift; sourceTree = "<group>"; };
 		8DE12EFA292CFCD9000FE38F /* DownloadedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedImageViewModel.swift; sourceTree = "<group>"; };
+		8DE12EFC292D1D52000FE38F /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		8DE12EFE292D2269000FE38F /* ImageFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				8DE12EED292BCEC8000FE38F /* DownloadManager.swift */,
+				8DE12EFC292D1D52000FE38F /* ImageCacheManager.swift */,
+				8DE12EFE292D2269000FE38F /* ImageFileManager.swift */,
 			);
 			path = Utilites;
 			sourceTree = "<group>";
@@ -231,8 +237,10 @@
 				8DE12EE8292BCD74000FE38F /* HomeView.swift in Sources */,
 				8DE12EF3292CF386000FE38F /* DownloadImagesRow.swift in Sources */,
 				8D0B4E87291924FF00B97148 /* ContentView.swift in Sources */,
+				8DE12EFD292D1D52000FE38F /* ImageCacheManager.swift in Sources */,
 				8D0B4EBE291A9BAC00B97148 /* BackgroundThreadBootcamp.swift in Sources */,
 				8DE12EEA292BCDE9000FE38F /* HomeViewModel.swift in Sources */,
+				8DE12EFF292D2269000FE38F /* ImageFileManager.swift in Sources */,
 				8DE12EF8292CFBC6000FE38F /* DownloadImageView.swift in Sources */,
 				8D0B4EC0291D245300B97148 /* SubscriberBootcamp.swift in Sources */,
 				8DE12EFB292CFCD9000FE38F /* DownloadedImageViewModel.swift in Sources */,

@@ -14,13 +14,26 @@ class DownloadedImageViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     
     var cancellables = Set<AnyCancellable>()
+    let manager = ImageCacheManager.share
     let urlString: String
+    let keyID: String
     
-    init(url: String) {
+    init(url: String, key: String) {
         self.urlString = url
-        DownloadImage()
+        self.keyID = key
+        getImage()
+    }
+        
+    /// check for image in cache and download if don't find
+    func getImage() {
+        if let savedImage = manager.getCache(key: keyID) {
+            image = savedImage
+        } else {
+            DownloadImage()
+        }
     }
     
+    /// downloading image and saving to cache
     func DownloadImage() {
         isLoading = true
         
@@ -40,7 +53,15 @@ class DownloadedImageViewModel: ObservableObject {
             .sink(receiveCompletion: { _ in
                 
             }, receiveValue: { [weak self] result in
-                self?.image = result
+                guard
+                    let self = self,
+                    let image = result
+                else {
+                    print("Error: no image to save or self")
+                    return
+                }
+                self.image = image
+                self.manager.addCache(key: self.keyID, image: image)
             })
             .store(in: &cancellables)
         
