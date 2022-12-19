@@ -31,7 +31,6 @@ class GenericBootcampViewModel: ObservableObject {
 
 struct GenericView<T:View>: View {
     
-//    let isMetric: Bool
     let title: String
     let info: T
     var body: some View {
