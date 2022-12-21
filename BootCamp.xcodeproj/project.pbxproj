@@ -17,6 +17,9 @@
 		8D0B4EBE291A9BAC00B97148 /* BackgroundThreadBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B4EBD291A9BAC00B97148 /* BackgroundThreadBootcamp.swift */; };
 		8D0B4EC0291D245300B97148 /* SubscriberBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B4EBF291D245300B97148 /* SubscriberBootcamp.swift */; };
 		8DB50DA62926567E00E8D190 /* FileManagerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB50DA52926567E00E8D190 /* FileManagerBootcamp.swift */; };
+		8DC663F62950BF9A00123DA2 /* AnyTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC663F52950BF9A00123DA2 /* AnyTransitions.swift */; };
+		8DC663F92951FAE700123DA2 /* UIRepresentableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC663F82951FAE700123DA2 /* UIRepresentableBootcamp.swift */; };
+		8DC663FB29536A6100123DA2 /* MachedGeometryEffectBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC663FA29536A6100123DA2 /* MachedGeometryEffectBootcamp.swift */; };
 		8DD42D8E29379C5A000EC22F /* GenericBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD42D8D29379C5A000EC22F /* GenericBootcamp.swift */; };
 		8DD42D922937AA07000EC22F /* ViewBuilderBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD42D912937AA07000EC22F /* ViewBuilderBootcamp.swift */; };
 		8DE12EE8292BCD74000FE38F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EE7292BCD74000FE38F /* HomeView.swift */; };
@@ -45,6 +48,9 @@
 		8D0B4EBD291A9BAC00B97148 /* BackgroundThreadBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadBootcamp.swift; sourceTree = "<group>"; };
 		8D0B4EBF291D245300B97148 /* SubscriberBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberBootcamp.swift; sourceTree = "<group>"; };
 		8DB50DA52926567E00E8D190 /* FileManagerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerBootcamp.swift; sourceTree = "<group>"; };
+		8DC663F52950BF9A00123DA2 /* AnyTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitions.swift; sourceTree = "<group>"; };
+		8DC663F82951FAE700123DA2 /* UIRepresentableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRepresentableBootcamp.swift; sourceTree = "<group>"; };
+		8DC663FA29536A6100123DA2 /* MachedGeometryEffectBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachedGeometryEffectBootcamp.swift; sourceTree = "<group>"; };
 		8DD42D8D29379C5A000EC22F /* GenericBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericBootcamp.swift; sourceTree = "<group>"; };
 		8DD42D912937AA07000EC22F /* ViewBuilderBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderBootcamp.swift; sourceTree = "<group>"; };
 		8DE12EE7292BCD74000FE38F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -179,6 +185,9 @@
 				8DD42D912937AA07000EC22F /* ViewBuilderBootcamp.swift */,
 				8DEB1A0E29506C0100BAF218 /* ButtonStyle.swift */,
 				8DEB1A0B2950497D00BAF218 /* ViewModifierBootcamp.swift */,
+				8DC663F52950BF9A00123DA2 /* AnyTransitions.swift */,
+				8DC663F82951FAE700123DA2 /* UIRepresentableBootcamp.swift */,
+				8DC663FA29536A6100123DA2 /* MachedGeometryEffectBootcamp.swift */,
 			);
 			path = Advanced;
 			sourceTree = "<group>";
@@ -257,6 +266,7 @@
 				8DE12EE8292BCD74000FE38F /* HomeView.swift in Sources */,
 				8DE12EF3292CF386000FE38F /* DownloadImagesRow.swift in Sources */,
 				8D0B4E87291924FF00B97148 /* ContentView.swift in Sources */,
+				8DC663F62950BF9A00123DA2 /* AnyTransitions.swift in Sources */,
 				8DE12EFD292D1D52000FE38F /* ImageCacheManager.swift in Sources */,
 				8DD42D8E29379C5A000EC22F /* GenericBootcamp.swift in Sources */,
 				8D0B4EBE291A9BAC00B97148 /* BackgroundThreadBootcamp.swift in Sources */,
@@ -275,6 +285,8 @@
 				8D0B4E932919251000B97148 /* ArraysBootCamp.swift in Sources */,
 				8D0B4E85291924FF00B97148 /* BootCampApp.swift in Sources */,
 				8DE12EF6292CF3E6000FE38F /* DeveloperPreview.swift in Sources */,
+				8DC663FB29536A6100123DA2 /* MachedGeometryEffectBootcamp.swift in Sources */,
+				8DC663F92951FAE700123DA2 /* UIRepresentableBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
