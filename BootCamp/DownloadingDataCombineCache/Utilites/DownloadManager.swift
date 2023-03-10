@@ -54,4 +54,5 @@ class DownloadManager: ObservableObject {
         }
         return output.data
     }
+    
 }
