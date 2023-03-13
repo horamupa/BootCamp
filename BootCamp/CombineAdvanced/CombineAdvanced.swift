@@ -10,8 +10,9 @@ import Combine
 
 class CombAdvanceDataManager {
     @Published var downloadedData: [String] = []
+    @Published var numbers: [Int] = []
     var currentValuePublisher = CurrentValueSubject<String, Never>("Nothing") // have default value
-    var passThroughPublisher = PassthroughSubject<Any, Never>() // don't have default value
+    var passThroughPublisher = PassthroughSubject<Int, Never>() // don't have default value
     
     init() {
         someNetworking()
@@ -21,12 +22,22 @@ class CombAdvanceDataManager {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.downloadedData = ["One","Two","Thee"]
         }
+        
+        let downloadedNumbers = Array(0..<11)
+        
+        for x in downloadedNumbers.indices {
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(x)) {
+                self.passThroughPublisher.send(downloadedNumbers[x])
+            }
+        }
     }
 }
 
 class CombineAdvancedViewModel: ObservableObject {
     @Published var data: [String] = []
     @Published var currentValueData: String = ""
+    @Published var numbersCounting: [String] = []
+    @Published var error: String = ""
     var dataManager: CombAdvanceDataManager = CombAdvanceDataManager()
     private var cancellable: Set<AnyCancellable> = []
     init() {
@@ -35,9 +46,10 @@ class CombineAdvancedViewModel: ObservableObject {
     
     func fetchData() {
         dataManager.$downloadedData
-            .sink { value in
-                switch value {
-                    
+            .sink { completion in
+                switch completion {
+                case.failure(let error):
+                    self.error = "Error Data fetching in VM: \(error.localizedDescription)"
                 case .finished:
                     break
                 }
@@ -45,12 +57,41 @@ class CombineAdvancedViewModel: ObservableObject {
                 self?.data = receivedValue
             }
             .store(in: &cancellable)
-
+        
+        
         dataManager.currentValuePublisher
-            .sink { [weak self] receivedValue in
-                self?.currentValueData = receivedValue
+            .sink { [weak self] data in
+                self?.currentValueData = data
             }
-            
+            .store(in: &cancellable)
+
+        
+        dataManager.passThroughPublisher
+        //Sequence Operations
+//            .first()
+//            .first(where: { $0 > 4 } )
+            .tryFirst(where: { item in // fake error
+                if item == 3 {
+                    throw URLError(.badServerResponse)
+                }
+                return item > 4
+            })
+            .map { String($0) }
+            .sink(receiveCompletion: { [weak self] completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error): // passing error to the @Published
+                    self?.error = "Error PassThrough in VM: \(error.localizedDescription)"
+                }
+            }, receiveValue: { [weak self] value in
+                self?.numbersCounting.append(value)
+            })
+//            .sink { [weak self] int in
+//                self?.numbersCounting.append(int)
+//            }
+            .store(in: &cancellable)
+
             
     }
     
@@ -61,15 +102,25 @@ struct CombineAdvanced: View {
    
     
     var body: some View {
-        VStack{
-            ForEach(vm.data, id: \.self) {
-                Text($0)
-                    .font(.largeTitle)
-                    .fontWeight(.black)
+        ScrollView {
+            VStack{
+                if !vm.error.isEmpty {
+                    Text(vm.error)
+                }
+                ForEach(vm.data, id: \.self) {
+                    Text($0)
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                }
+                Text(vm.currentValueData)
+                    .font(.title)
+                    .fontWeight(.light)
+                ForEach(vm.numbersCounting, id: \.self) {
+                    Text("\($0)")
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                }
             }
-            Text(vm.currentValueData)
-                .font(.title)
-                .fontWeight(.light)
         }
     }
 }
