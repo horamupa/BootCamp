@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D091A7A29C21FBB00101C2C /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D091A7929C21FBB00101C2C /* NavigationBarView.swift */; };
+		8D091A7D29C21FFB00101C2C /* PreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D091A7C29C21FFB00101C2C /* PreferenceView.swift */; };
+		8D091A7F29C2263800101C2C /* GeometryPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D091A7E29C2263800101C2C /* GeometryPreferenceKey.swift */; };
+		8D091A8129C2295300101C2C /* ScrollViewPrefKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D091A8029C2295300101C2C /* ScrollViewPrefKey.swift */; };
 		8D0B4E85291924FF00B97148 /* BootCampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B4E84291924FF00B97148 /* BootCampApp.swift */; };
 		8D0B4E87291924FF00B97148 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B4E86291924FF00B97148 /* ContentView.swift */; };
 		8D0B4E892919250000B97148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0B4E882919250000B97148 /* Assets.xcassets */; };
@@ -69,6 +73,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D091A7929C21FBB00101C2C /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		8D091A7C29C21FFB00101C2C /* PreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceView.swift; sourceTree = "<group>"; };
+		8D091A7E29C2263800101C2C /* GeometryPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryPreferenceKey.swift; sourceTree = "<group>"; };
+		8D091A8029C2295300101C2C /* ScrollViewPrefKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewPrefKey.swift; sourceTree = "<group>"; };
 		8D0B4E81291924FF00B97148 /* BootCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0B4E84291924FF00B97148 /* BootCampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootCampApp.swift; sourceTree = "<group>"; };
 		8D0B4E86291924FF00B97148 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +148,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D091A7829C21FA100101C2C /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				8D091A7929C21FBB00101C2C /* NavigationBarView.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		8D091A7B29C21FE700101C2C /* PreferenceKey */ = {
+			isa = PBXGroup;
+			children = (
+				8D091A7C29C21FFB00101C2C /* PreferenceView.swift */,
+				8D091A7E29C2263800101C2C /* GeometryPreferenceKey.swift */,
+				8D091A8029C2295300101C2C /* ScrollViewPrefKey.swift */,
+			);
+			path = PreferenceKey;
+			sourceTree = "<group>";
+		};
 		8D0B4E78291924FF00B97148 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +187,8 @@
 		8D0B4E83291924FF00B97148 /* BootCamp */ = {
 			isa = PBXGroup;
 			children = (
+				8D091A7B29C21FE700101C2C /* PreferenceKey */,
+				8D091A7829C21FA100101C2C /* NavigationBar */,
 				8D42872D29BBA6D000F0AC24 /* CombineAdvanced */,
 				8DBB903C29B62B8100C9CB60 /* CoorPatternBootcamp */,
 				8DC663FC29546A5B00123DA2 /* Onboarding */,
@@ -424,11 +452,13 @@
 				8DE12EF3292CF386000FE38F /* DownloadImagesRow.swift in Sources */,
 				8D0B4E87291924FF00B97148 /* ContentView.swift in Sources */,
 				8DC663F62950BF9A00123DA2 /* AnyTransitions.swift in Sources */,
+				8D091A7D29C21FFB00101C2C /* PreferenceView.swift in Sources */,
 				8DE12EFD292D1D52000FE38F /* ImageCacheManager.swift in Sources */,
 				8D1B2F7829915027007D500A /* ViewBuilder2BootC.swift in Sources */,
 				8DD42D8E29379C5A000EC22F /* GenericBootcamp.swift in Sources */,
 				8D0B4EBE291A9BAC00B97148 /* BackgroundThreadBootcamp.swift in Sources */,
 				8D1B2F7A29916C25007D500A /* NavigationStackBootC.swift in Sources */,
+				8D091A7A29C21FBB00101C2C /* NavigationBarView.swift in Sources */,
 				8DE12EEA292BCDE9000FE38F /* HomeViewModel.swift in Sources */,
 				8DF9EA2629BC92FC00713C7D /* DelegatePatternBootcamp.swift in Sources */,
 				8DE12EFF292D2269000FE38F /* ImageFileManager.swift in Sources */,
@@ -441,11 +471,13 @@
 				8DE57F07296C236A00907DAD /* UnitTestingBootcampViewModel.swift in Sources */,
 				8DEB1A0C2950497D00BAF218 /* ViewModifierBootcamp.swift in Sources */,
 				8D14EDB529796ED200FFA12B /* GridBootcamp.swift in Sources */,
+				8D091A7F29C2263800101C2C /* GeometryPreferenceKey.swift in Sources */,
 				8DC66402295470B500123DA2 /* OnboardingView.swift in Sources */,
 				8DE12EF8292CFBC6000FE38F /* DownloadImageView.swift in Sources */,
 				8DE57F05296C20EE00907DAD /* UnitTestingBootcamp.swift in Sources */,
 				8D0B4EC0291D245300B97148 /* SubscriberBootcamp.swift in Sources */,
 				8DD506422969B79E006D9F6E /* DependencyEjectionBootcamp.swift in Sources */,
+				8D091A8129C2295300101C2C /* ScrollViewPrefKey.swift in Sources */,
 				8DE12EFB292CFCD9000FE38F /* DownloadedImageViewModel.swift in Sources */,
 				8D0B4EB4291962D800B97148 /* CoreDataBootcamp.swift in Sources */,
 				8DE12EEE292BCEC8000FE38F /* DownloadManager.swift in Sources */,
