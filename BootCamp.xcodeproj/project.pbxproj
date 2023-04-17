@@ -29,9 +29,14 @@
 		8D42872F29BBA6ED00F0AC24 /* CombineAdvanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42872E29BBA6ED00F0AC24 /* CombineAdvanced.swift */; };
 		8D42873129BBCA8A00F0AC24 /* CombineAdvancedPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42873029BBCA8A00F0AC24 /* CombineAdvancedPart2.swift */; };
 		8D66C5D92998FADE00270D77 /* AppStorageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66C5D82998FADE00270D77 /* AppStorageBootcamp.swift */; };
+		8D91295A29EAF62E004E15FE /* AsyncCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D91295929EAF62E004E15FE /* AsyncCombine.swift */; };
 		8D939D4B2982810A0026540E /* NavigationStackBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D939D4A2982810A0026540E /* NavigationStackBootcamp.swift */; };
 		8DB50DA62926567E00E8D190 /* FileManagerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB50DA52926567E00E8D190 /* FileManagerBootcamp.swift */; };
 		8DBB903E29B62BA800C9CB60 /* CoorHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB903D29B62BA800C9CB60 /* CoorHomeView.swift */; };
+		8DC33BB229C9BEE600F45AF7 /* CoordinatorTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC33BB129C9BEE600F45AF7 /* CoordinatorTabView.swift */; };
+		8DC33BB429C9BF6000F45AF7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC33BB329C9BF6000F45AF7 /* Coordinator.swift */; };
+		8DC33BB729C9C03E00F45AF7 /* HomeCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC33BB529C9C03E00F45AF7 /* HomeCoordinatorView.swift */; };
+		8DC33BB829C9C03E00F45AF7 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC33BB629C9C03E00F45AF7 /* HomeCoordinator.swift */; };
 		8DC663F62950BF9A00123DA2 /* AnyTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC663F52950BF9A00123DA2 /* AnyTransitions.swift */; };
 		8DC663F92951FAE700123DA2 /* UIRepresentableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC663F82951FAE700123DA2 /* UIRepresentableBootcamp.swift */; };
 		8DC663FB29536A6100123DA2 /* MachedGeometryEffectBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC663FA29536A6100123DA2 /* MachedGeometryEffectBootcamp.swift */; };
@@ -96,9 +101,14 @@
 		8D42872E29BBA6ED00F0AC24 /* CombineAdvanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAdvanced.swift; sourceTree = "<group>"; };
 		8D42873029BBCA8A00F0AC24 /* CombineAdvancedPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAdvancedPart2.swift; sourceTree = "<group>"; };
 		8D66C5D82998FADE00270D77 /* AppStorageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageBootcamp.swift; sourceTree = "<group>"; };
+		8D91295929EAF62E004E15FE /* AsyncCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCombine.swift; sourceTree = "<group>"; };
 		8D939D4A2982810A0026540E /* NavigationStackBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackBootcamp.swift; sourceTree = "<group>"; };
 		8DB50DA52926567E00E8D190 /* FileManagerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerBootcamp.swift; sourceTree = "<group>"; };
 		8DBB903D29B62BA800C9CB60 /* CoorHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoorHomeView.swift; sourceTree = "<group>"; };
+		8DC33BB129C9BEE600F45AF7 /* CoordinatorTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTabView.swift; sourceTree = "<group>"; };
+		8DC33BB329C9BF6000F45AF7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8DC33BB529C9C03E00F45AF7 /* HomeCoordinatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorView.swift; sourceTree = "<group>"; };
+		8DC33BB629C9C03E00F45AF7 /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		8DC663F52950BF9A00123DA2 /* AnyTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitions.swift; sourceTree = "<group>"; };
 		8DC663F82951FAE700123DA2 /* UIRepresentableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRepresentableBootcamp.swift; sourceTree = "<group>"; };
 		8DC663FA29536A6100123DA2 /* MachedGeometryEffectBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachedGeometryEffectBootcamp.swift; sourceTree = "<group>"; };
@@ -187,10 +197,11 @@
 		8D0B4E83291924FF00B97148 /* BootCamp */ = {
 			isa = PBXGroup;
 			children = (
+				8D91295829EAF5F4004E15FE /* Concurrency */,
 				8D091A7B29C21FE700101C2C /* PreferenceKey */,
 				8D091A7829C21FA100101C2C /* NavigationBar */,
 				8D42872D29BBA6D000F0AC24 /* CombineAdvanced */,
-				8DBB903C29B62B8100C9CB60 /* CoorPatternBootcamp */,
+				8DBB903C29B62B8100C9CB60 /* Coordinator */,
 				8DC663FC29546A5B00123DA2 /* Onboarding */,
 				8D0B4E84291924FF00B97148 /* BootCampApp.swift */,
 				8D0B4E86291924FF00B97148 /* ContentView.swift */,
@@ -236,12 +247,24 @@
 			path = CombineAdvanced;
 			sourceTree = "<group>";
 		};
-		8DBB903C29B62B8100C9CB60 /* CoorPatternBootcamp */ = {
+		8D91295829EAF5F4004E15FE /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				8D91295929EAF62E004E15FE /* AsyncCombine.swift */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
+		8DBB903C29B62B8100C9CB60 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 				8DBB903D29B62BA800C9CB60 /* CoorHomeView.swift */,
+				8DC33BB329C9BF6000F45AF7 /* Coordinator.swift */,
+				8DC33BB129C9BEE600F45AF7 /* CoordinatorTabView.swift */,
+				8DC33BB629C9C03E00F45AF7 /* HomeCoordinator.swift */,
+				8DC33BB529C9C03E00F45AF7 /* HomeCoordinatorView.swift */,
 			);
-			path = CoorPatternBootcamp;
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		8DC663FC29546A5B00123DA2 /* Onboarding */ = {
@@ -450,6 +473,7 @@
 				8DE12EEC292BCE21000FE38F /* ImageModel.swift in Sources */,
 				8DE12EE8292BCD74000FE38F /* HomeView.swift in Sources */,
 				8DE12EF3292CF386000FE38F /* DownloadImagesRow.swift in Sources */,
+				8DC33BB229C9BEE600F45AF7 /* CoordinatorTabView.swift in Sources */,
 				8D0B4E87291924FF00B97148 /* ContentView.swift in Sources */,
 				8DC663F62950BF9A00123DA2 /* AnyTransitions.swift in Sources */,
 				8D091A7D29C21FFB00101C2C /* PreferenceView.swift in Sources */,
@@ -464,11 +488,13 @@
 				8DE12EFF292D2269000FE38F /* ImageFileManager.swift in Sources */,
 				8D66C5D92998FADE00270D77 /* AppStorageBootcamp.swift in Sources */,
 				8D42872F29BBA6ED00F0AC24 /* CombineAdvanced.swift in Sources */,
+				8DC33BB729C9C03E00F45AF7 /* HomeCoordinatorView.swift in Sources */,
 				8D1B2F73298D5F97007D500A /* ViewModelBootcamp.swift in Sources */,
 				8DD506402969A19A006D9F6E /* ProtocolsBootcamp.swift in Sources */,
 				8DBB903E29B62BA800C9CB60 /* CoorHomeView.swift in Sources */,
 				8DEB1A0F29506C0100BAF218 /* ButtonStyle.swift in Sources */,
 				8DE57F07296C236A00907DAD /* UnitTestingBootcampViewModel.swift in Sources */,
+				8DC33BB829C9C03E00F45AF7 /* HomeCoordinator.swift in Sources */,
 				8DEB1A0C2950497D00BAF218 /* ViewModifierBootcamp.swift in Sources */,
 				8D14EDB529796ED200FFA12B /* GridBootcamp.swift in Sources */,
 				8D091A7F29C2263800101C2C /* GeometryPreferenceKey.swift in Sources */,
@@ -488,6 +514,8 @@
 				8DD42D922937AA07000EC22F /* ViewBuilderBootcamp.swift in Sources */,
 				8DFA304B295C3B2000AB0170 /* ConditionalBootcamp.swift in Sources */,
 				8D0B4EB7291963F000B97148 /* FruitsContainer.xcdatamodeld in Sources */,
+				8DC33BB429C9BF6000F45AF7 /* Coordinator.swift in Sources */,
+				8D91295A29EAF62E004E15FE /* AsyncCombine.swift in Sources */,
 				8D0B4E932919251000B97148 /* ArraysBootCamp.swift in Sources */,
 				8D0B4E85291924FF00B97148 /* BootCampApp.swift in Sources */,
 				8DE12EF6292CF3E6000FE38F /* DeveloperPreview.swift in Sources */,

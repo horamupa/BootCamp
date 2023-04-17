@@ -11,8 +11,8 @@ import SwiftUI
 struct BootCampApp: App {
     var body: some Scene {
         WindowGroup {
-//            ProtocolsBootcamp(myColor: DefaultColorTheme(), myButton: myButton())
-            CoorHomeView()
+            ProtocolsBootcamp(myColor: DefaultColorTheme(), myButton: myButton())
+//            CoorHomeView()
         }
     }
 }
