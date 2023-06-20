@@ -11,7 +11,7 @@ import Combine
 class AsyncImageLoader: ObservableObject {
     let url = URL(string: "https://picsum/photos/200")!
     
-    func handleCompeletion(_ data: Data?, _ response: URLResponse?) -> UIImage? {
+    func handleResponse(_ data: Data?, _ response: URLResponse?) -> UIImage? {
         guard
             let data = data,
             let image = UIImage(data: data),
@@ -24,9 +24,18 @@ class AsyncImageLoader: ObservableObject {
     
     func downloadWithCombine() -> AnyPublisher<UIImage?, Error> {
         URLSession.shared.dataTaskPublisher(for: url)
-            .map(handleCompeletion)
+            .map(handleResponse)
             .mapError{$0}
             .eraseToAnyPublisher()
+    }
+    
+    func downloadWithAsync() async throws -> UIImage? {
+        do {
+            let (data, response) = try await URLSession.shared.data(from: url)
+            return handleResponse(data, response)
+        } catch {
+            throw URLError(.badURL)
+        }
     }
 }
 
@@ -35,7 +44,7 @@ class AsyncCombineViewModel: ObservableObject {
     var loader = AsyncImageLoader()
     var cancellables = Set<AnyCancellable>()
     
-    func fetchImage() {
+    func fetchImageCombine() {
         loader.downloadWithCombine()
             .sink { _ in
                 
@@ -43,7 +52,13 @@ class AsyncCombineViewModel: ObservableObject {
                 self?.image = image
             }
             .store(in: &cancellables)
-
+    }
+    
+    func fetchImageAsync() async {
+        let image = try? await loader.downloadWithAsync()
+        await MainActor.run {
+            self.image = image
+        }
     }
 }
 
@@ -54,6 +69,11 @@ struct AsyncCombineView: View {
         ZStack {
             if let image = vm.image {
                 Image(uiImage: image)
+            }
+        }
+        .onAppear {
+            Task {
+                await vm.fetchImageAsync()
             }
         }
     }

@@ -26,13 +26,26 @@
 		8D1B2F7629910FA2007D500A /* CoordinatorBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B2F7529910FA2007D500A /* CoordinatorBootcamp.swift */; };
 		8D1B2F7829915027007D500A /* ViewBuilder2BootC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B2F7729915027007D500A /* ViewBuilder2BootC.swift */; };
 		8D1B2F7A29916C25007D500A /* NavigationStackBootC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B2F7929916C25007D500A /* NavigationStackBootC.swift */; };
+		8D2A5FEC2A41021200B58236 /* KeychainBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2A5FEB2A41021200B58236 /* KeychainBootcamp.swift */; };
+		8D3F12522A407AFF0040C232 /* CoreDataWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3F12512A407AFF0040C232 /* CoreDataWork.swift */; };
+		8D3F12552A407D5D0040C232 /* MeditationsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D3F12532A407D5D0040C232 /* MeditationsDataModel.xcdatamodeld */; };
+		8D3F12582A4082190040C232 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3F12572A4082190040C232 /* Meditation.swift */; };
+		8D3F125B2A4085D90040C232 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3F125A2A4085D90040C232 /* CoreDataManager.swift */; };
+		8D3F125D2A40A68A0040C232 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3F125C2A40A68A0040C232 /* MeditationView.swift */; };
+		8D3F125F2A40A90F0040C232 /* AddMeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3F125E2A40A90F0040C232 /* AddMeditationView.swift */; };
 		8D42872F29BBA6ED00F0AC24 /* CombineAdvanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42872E29BBA6ED00F0AC24 /* CombineAdvanced.swift */; };
 		8D42873129BBCA8A00F0AC24 /* CombineAdvancedPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42873029BBCA8A00F0AC24 /* CombineAdvancedPart2.swift */; };
 		8D66C5D92998FADE00270D77 /* AppStorageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66C5D82998FADE00270D77 /* AppStorageBootcamp.swift */; };
 		8D91295A29EAF62E004E15FE /* AsyncCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D91295929EAF62E004E15FE /* AsyncCombine.swift */; };
+		8D91295C29ED556F004E15FE /* AsyncAwaitBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D91295B29ED556F004E15FE /* AsyncAwaitBootcamp.swift */; };
+		8D91295E29ED7AD4004E15FE /* TaskBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D91295D29ED7AD4004E15FE /* TaskBootcamp.swift */; };
 		8D939D4B2982810A0026540E /* NavigationStackBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D939D4A2982810A0026540E /* NavigationStackBootcamp.swift */; };
+		8DAB4E5A2A41CAE700A6AF7B /* ObserverBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAB4E592A41CAE700A6AF7B /* ObserverBootcamp.swift */; };
 		8DB50DA62926567E00E8D190 /* FileManagerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB50DA52926567E00E8D190 /* FileManagerBootcamp.swift */; };
 		8DBB903E29B62BA800C9CB60 /* CoorHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB903D29B62BA800C9CB60 /* CoorHomeView.swift */; };
+		8DC26FA52A2CEDA90063816F /* TaskGroupBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC26FA42A2CEDA90063816F /* TaskGroupBootcamp.swift */; };
+		8DC26FA72A2D04CB0063816F /* CheckedContinuationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC26FA62A2D04CB0063816F /* CheckedContinuationBootcamp.swift */; };
+		8DC26FA92A2E07C00063816F /* StructClassActorBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC26FA82A2E07C00063816F /* StructClassActorBootcamp.swift */; };
 		8DC33BB229C9BEE600F45AF7 /* CoordinatorTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC33BB129C9BEE600F45AF7 /* CoordinatorTabView.swift */; };
 		8DC33BB429C9BF6000F45AF7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC33BB329C9BF6000F45AF7 /* Coordinator.swift */; };
 		8DC33BB729C9C03E00F45AF7 /* HomeCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC33BB529C9C03E00F45AF7 /* HomeCoordinatorView.swift */; };
@@ -46,6 +59,16 @@
 		8DD42D922937AA07000EC22F /* ViewBuilderBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD42D912937AA07000EC22F /* ViewBuilderBootcamp.swift */; };
 		8DD506402969A19A006D9F6E /* ProtocolsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5063F2969A19A006D9F6E /* ProtocolsBootcamp.swift */; };
 		8DD506422969B79E006D9F6E /* DependencyEjectionBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD506412969B79D006D9F6E /* DependencyEjectionBootcamp.swift */; };
+		8DD6BBFE2A1BDF0A00097098 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6BBFC2A1BDF0900097098 /* AuthViewModel.swift */; };
+		8DD6BBFF2A1BDF0A00097098 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6BBFD2A1BDF0A00097098 /* AuthenticationView.swift */; };
+		8DD6BC012A1BDF1D00097098 /* AuthBoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6BC002A1BDF1D00097098 /* AuthBoy.swift */; };
+		8DD6BC032A1BDF2F00097098 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6BC022A1BDF2F00097098 /* RootView.swift */; };
+		8DD6BC052A1BE45500097098 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DD6BC042A1BE45500097098 /* GoogleService-Info.plist */; };
+		8DD6BC092A1BE7DF00097098 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8DD6BC082A1BE7DF00097098 /* FirebaseAnalytics */; };
+		8DD6BC0B2A1BE7DF00097098 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8DD6BC0A2A1BE7DF00097098 /* FirebaseAnalyticsSwift */; };
+		8DD6BC0D2A1BE7DF00097098 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8DD6BC0C2A1BE7DF00097098 /* FirebaseAuth */; };
+		8DD6BC102A1BE98000097098 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD6BC0F2A1BE98000097098 /* SettingsView.swift */; };
+		8DDD52232A23829800897B34 /* EnumsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD52222A23829800897B34 /* EnumsBootcamp.swift */; };
 		8DE12EE8292BCD74000FE38F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EE7292BCD74000FE38F /* HomeView.swift */; };
 		8DE12EEA292BCDE9000FE38F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EE9292BCDE9000FE38F /* HomeViewModel.swift */; };
 		8DE12EEC292BCE21000FE38F /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE12EEB292BCE21000FE38F /* ImageModel.swift */; };
@@ -98,13 +121,26 @@
 		8D1B2F7529910FA2007D500A /* CoordinatorBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorBootcamp.swift; sourceTree = "<group>"; };
 		8D1B2F7729915027007D500A /* ViewBuilder2BootC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilder2BootC.swift; sourceTree = "<group>"; };
 		8D1B2F7929916C25007D500A /* NavigationStackBootC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackBootC.swift; sourceTree = "<group>"; };
+		8D2A5FEB2A41021200B58236 /* KeychainBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainBootcamp.swift; sourceTree = "<group>"; };
+		8D3F12512A407AFF0040C232 /* CoreDataWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWork.swift; sourceTree = "<group>"; };
+		8D3F12542A407D5D0040C232 /* ContactsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactsDataModel.xcdatamodel; sourceTree = "<group>"; };
+		8D3F12572A4082190040C232 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
+		8D3F125A2A4085D90040C232 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8D3F125C2A40A68A0040C232 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
+		8D3F125E2A40A90F0040C232 /* AddMeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeditationView.swift; sourceTree = "<group>"; };
 		8D42872E29BBA6ED00F0AC24 /* CombineAdvanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAdvanced.swift; sourceTree = "<group>"; };
 		8D42873029BBCA8A00F0AC24 /* CombineAdvancedPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAdvancedPart2.swift; sourceTree = "<group>"; };
 		8D66C5D82998FADE00270D77 /* AppStorageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageBootcamp.swift; sourceTree = "<group>"; };
 		8D91295929EAF62E004E15FE /* AsyncCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCombine.swift; sourceTree = "<group>"; };
+		8D91295B29ED556F004E15FE /* AsyncAwaitBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitBootcamp.swift; sourceTree = "<group>"; };
+		8D91295D29ED7AD4004E15FE /* TaskBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBootcamp.swift; sourceTree = "<group>"; };
 		8D939D4A2982810A0026540E /* NavigationStackBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackBootcamp.swift; sourceTree = "<group>"; };
+		8DAB4E592A41CAE700A6AF7B /* ObserverBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverBootcamp.swift; sourceTree = "<group>"; };
 		8DB50DA52926567E00E8D190 /* FileManagerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerBootcamp.swift; sourceTree = "<group>"; };
 		8DBB903D29B62BA800C9CB60 /* CoorHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoorHomeView.swift; sourceTree = "<group>"; };
+		8DC26FA42A2CEDA90063816F /* TaskGroupBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupBootcamp.swift; sourceTree = "<group>"; };
+		8DC26FA62A2D04CB0063816F /* CheckedContinuationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedContinuationBootcamp.swift; sourceTree = "<group>"; };
+		8DC26FA82A2E07C00063816F /* StructClassActorBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructClassActorBootcamp.swift; sourceTree = "<group>"; };
 		8DC33BB129C9BEE600F45AF7 /* CoordinatorTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTabView.swift; sourceTree = "<group>"; };
 		8DC33BB329C9BF6000F45AF7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		8DC33BB529C9C03E00F45AF7 /* HomeCoordinatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorView.swift; sourceTree = "<group>"; };
@@ -118,6 +154,13 @@
 		8DD42D912937AA07000EC22F /* ViewBuilderBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderBootcamp.swift; sourceTree = "<group>"; };
 		8DD5063F2969A19A006D9F6E /* ProtocolsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsBootcamp.swift; sourceTree = "<group>"; };
 		8DD506412969B79D006D9F6E /* DependencyEjectionBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyEjectionBootcamp.swift; sourceTree = "<group>"; };
+		8DD6BBFC2A1BDF0900097098 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		8DD6BBFD2A1BDF0A00097098 /* AuthenticationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		8DD6BC002A1BDF1D00097098 /* AuthBoy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthBoy.swift; sourceTree = "<group>"; };
+		8DD6BC022A1BDF2F00097098 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		8DD6BC042A1BE45500097098 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8DD6BC0F2A1BE98000097098 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8DDD52222A23829800897B34 /* EnumsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumsBootcamp.swift; sourceTree = "<group>"; };
 		8DE12EE7292BCD74000FE38F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8DE12EE9292BCDE9000FE38F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8DE12EEB292BCE21000FE38F /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
@@ -145,6 +188,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD6BC0B2A1BE7DF00097098 /* FirebaseAnalyticsSwift in Frameworks */,
+				8DD6BC0D2A1BE7DF00097098 /* FirebaseAuth in Frameworks */,
+				8DD6BC092A1BE7DF00097098 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,8 +225,14 @@
 		8D0B4E78291924FF00B97148 = {
 			isa = PBXGroup;
 			children = (
+				8DAB4E572A41CAC300A6AF7B /* Patterns */,
+				8D3F12502A407ACF0040C232 /* CoreDataTundsdev */,
+				8DDD51F72A22592400897B34 /* BlackNavigation */,
+				8D0B4E84291924FF00B97148 /* BootCampApp.swift */,
+				8DD6BBFA2A1BDEC800097098 /* FirebaseBootcamp */,
 				8D0B4E83291924FF00B97148 /* BootCamp */,
 				8DE57F0D296C262400907DAD /* BootCamp_Tests */,
+				8DD6BC042A1BE45500097098 /* GoogleService-Info.plist */,
 				8D0B4E82291924FF00B97148 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -203,7 +255,6 @@
 				8D42872D29BBA6D000F0AC24 /* CombineAdvanced */,
 				8DBB903C29B62B8100C9CB60 /* Coordinator */,
 				8DC663FC29546A5B00123DA2 /* Onboarding */,
-				8D0B4E84291924FF00B97148 /* BootCampApp.swift */,
 				8D0B4E86291924FF00B97148 /* ContentView.swift */,
 				8D0B4E922919251000B97148 /* ArraysBootCamp.swift */,
 				8D0B4EB3291962D800B97148 /* CoreDataBootcamp.swift */,
@@ -225,7 +276,8 @@
 				8D0B4E8A2919250000B97148 /* Preview Content */,
 				8DE57F03296C20D800907DAD /* UnitTesting */,
 				8D66C5D82998FADE00270D77 /* AppStorageBootcamp.swift */,
-				8DF9EA2529BC92FC00713C7D /* DelegatePatternBootcamp.swift */,
+				8DDD52222A23829800897B34 /* EnumsBootcamp.swift */,
+				8D2A5FEB2A41021200B58236 /* KeychainBootcamp.swift */,
 			);
 			path = BootCamp;
 			sourceTree = "<group>";
@@ -236,6 +288,35 @@
 				8D0B4E8B2919250000B97148 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D3F12502A407ACF0040C232 /* CoreDataTundsdev */ = {
+			isa = PBXGroup;
+			children = (
+				8D3F12592A4085BA0040C232 /* Services */,
+				8D3F12562A4081FC0040C232 /* Model */,
+				8D3F12512A407AFF0040C232 /* CoreDataWork.swift */,
+				8D3F125C2A40A68A0040C232 /* MeditationView.swift */,
+				8D3F125E2A40A90F0040C232 /* AddMeditationView.swift */,
+				8D3F12532A407D5D0040C232 /* MeditationsDataModel.xcdatamodeld */,
+			);
+			path = CoreDataTundsdev;
+			sourceTree = "<group>";
+		};
+		8D3F12562A4081FC0040C232 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D3F12572A4082190040C232 /* Meditation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D3F12592A4085BA0040C232 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8D3F125A2A4085D90040C232 /* CoreDataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		8D42872D29BBA6D000F0AC24 /* CombineAdvanced */ = {
@@ -251,8 +332,22 @@
 			isa = PBXGroup;
 			children = (
 				8D91295929EAF62E004E15FE /* AsyncCombine.swift */,
+				8D91295B29ED556F004E15FE /* AsyncAwaitBootcamp.swift */,
+				8D91295D29ED7AD4004E15FE /* TaskBootcamp.swift */,
+				8DC26FA42A2CEDA90063816F /* TaskGroupBootcamp.swift */,
+				8DC26FA62A2D04CB0063816F /* CheckedContinuationBootcamp.swift */,
+				8DC26FA82A2E07C00063816F /* StructClassActorBootcamp.swift */,
 			);
 			path = Concurrency;
+			sourceTree = "<group>";
+		};
+		8DAB4E572A41CAC300A6AF7B /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				8DF9EA2529BC92FC00713C7D /* DelegatePatternBootcamp.swift */,
+				8DAB4E592A41CAE700A6AF7B /* ObserverBootcamp.swift */,
+			);
+			path = Patterns;
 			sourceTree = "<group>";
 		};
 		8DBB903C29B62B8100C9CB60 /* Coordinator */ = {
@@ -274,6 +369,41 @@
 				8DC66401295470B500123DA2 /* OnboardingView.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8DD6BBFA2A1BDEC800097098 /* FirebaseBootcamp */ = {
+			isa = PBXGroup;
+			children = (
+				8DD6BC022A1BDF2F00097098 /* RootView.swift */,
+				8DD6BBFB2A1BDEE000097098 /* Auth */,
+				8DD6BC0E2A1BE96500097098 /* Settings */,
+			);
+			path = FirebaseBootcamp;
+			sourceTree = "<group>";
+		};
+		8DD6BBFB2A1BDEE000097098 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8DD6BBFD2A1BDF0A00097098 /* AuthenticationView.swift */,
+				8DD6BBFC2A1BDF0900097098 /* AuthViewModel.swift */,
+				8DD6BC002A1BDF1D00097098 /* AuthBoy.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		8DD6BC0E2A1BE96500097098 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8DD6BC0F2A1BE98000097098 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8DDD51F72A22592400897B34 /* BlackNavigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BlackNavigation;
 			sourceTree = "<group>";
 		};
 		8DE12EE2292BCD14000FE38F /* DownloadingDataCombineCache */ = {
@@ -384,6 +514,11 @@
 			dependencies = (
 			);
 			name = BootCamp;
+			packageProductDependencies = (
+				8DD6BC082A1BE7DF00097098 /* FirebaseAnalytics */,
+				8DD6BC0A2A1BE7DF00097098 /* FirebaseAnalyticsSwift */,
+				8DD6BC0C2A1BE7DF00097098 /* FirebaseAuth */,
+			);
 			productName = BootCamp;
 			productReference = 8D0B4E81291924FF00B97148 /* BootCamp.app */;
 			productType = "com.apple.product-type.application";
@@ -434,6 +569,9 @@
 				Base,
 			);
 			mainGroup = 8D0B4E78291924FF00B97148;
+			packageReferences = (
+				8DD6BC072A1BE7DF00097098 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 8D0B4E82291924FF00B97148 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -450,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D0B4E8C2919250000B97148 /* Preview Assets.xcassets in Resources */,
+				8DD6BC052A1BE45500097098 /* GoogleService-Info.plist in Resources */,
 				8D0B4E892919250000B97148 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,22 +621,32 @@
 				8DD42D8E29379C5A000EC22F /* GenericBootcamp.swift in Sources */,
 				8D0B4EBE291A9BAC00B97148 /* BackgroundThreadBootcamp.swift in Sources */,
 				8D1B2F7A29916C25007D500A /* NavigationStackBootC.swift in Sources */,
+				8D3F12522A407AFF0040C232 /* CoreDataWork.swift in Sources */,
 				8D091A7A29C21FBB00101C2C /* NavigationBarView.swift in Sources */,
+				8D3F125D2A40A68A0040C232 /* MeditationView.swift in Sources */,
 				8DE12EEA292BCDE9000FE38F /* HomeViewModel.swift in Sources */,
+				8D2A5FEC2A41021200B58236 /* KeychainBootcamp.swift in Sources */,
 				8DF9EA2629BC92FC00713C7D /* DelegatePatternBootcamp.swift in Sources */,
 				8DE12EFF292D2269000FE38F /* ImageFileManager.swift in Sources */,
+				8DC26FA52A2CEDA90063816F /* TaskGroupBootcamp.swift in Sources */,
+				8DD6BC012A1BDF1D00097098 /* AuthBoy.swift in Sources */,
 				8D66C5D92998FADE00270D77 /* AppStorageBootcamp.swift in Sources */,
 				8D42872F29BBA6ED00F0AC24 /* CombineAdvanced.swift in Sources */,
 				8DC33BB729C9C03E00F45AF7 /* HomeCoordinatorView.swift in Sources */,
+				8D91295E29ED7AD4004E15FE /* TaskBootcamp.swift in Sources */,
+				8D3F12582A4082190040C232 /* Meditation.swift in Sources */,
 				8D1B2F73298D5F97007D500A /* ViewModelBootcamp.swift in Sources */,
 				8DD506402969A19A006D9F6E /* ProtocolsBootcamp.swift in Sources */,
 				8DBB903E29B62BA800C9CB60 /* CoorHomeView.swift in Sources */,
 				8DEB1A0F29506C0100BAF218 /* ButtonStyle.swift in Sources */,
+				8D3F12552A407D5D0040C232 /* MeditationsDataModel.xcdatamodeld in Sources */,
 				8DE57F07296C236A00907DAD /* UnitTestingBootcampViewModel.swift in Sources */,
+				8DD6BC102A1BE98000097098 /* SettingsView.swift in Sources */,
 				8DC33BB829C9C03E00F45AF7 /* HomeCoordinator.swift in Sources */,
 				8DEB1A0C2950497D00BAF218 /* ViewModifierBootcamp.swift in Sources */,
 				8D14EDB529796ED200FFA12B /* GridBootcamp.swift in Sources */,
 				8D091A7F29C2263800101C2C /* GeometryPreferenceKey.swift in Sources */,
+				8DDD52232A23829800897B34 /* EnumsBootcamp.swift in Sources */,
 				8DC66402295470B500123DA2 /* OnboardingView.swift in Sources */,
 				8DE12EF8292CFBC6000FE38F /* DownloadImageView.swift in Sources */,
 				8DE57F05296C20EE00907DAD /* UnitTestingBootcamp.swift in Sources */,
@@ -507,15 +656,24 @@
 				8DE12EFB292CFCD9000FE38F /* DownloadedImageViewModel.swift in Sources */,
 				8D0B4EB4291962D800B97148 /* CoreDataBootcamp.swift in Sources */,
 				8DE12EEE292BCEC8000FE38F /* DownloadManager.swift in Sources */,
+				8DC26FA92A2E07C00063816F /* StructClassActorBootcamp.swift in Sources */,
 				8DC663FE29546A7900123DA2 /* IntroView.swift in Sources */,
 				8DE57F18296DD3FF00907DAD /* APIServices.swift in Sources */,
 				8DB50DA62926567E00E8D190 /* FileManagerBootcamp.swift in Sources */,
+				8DD6BC032A1BDF2F00097098 /* RootView.swift in Sources */,
 				8D939D4B2982810A0026540E /* NavigationStackBootcamp.swift in Sources */,
+				8DAB4E5A2A41CAE700A6AF7B /* ObserverBootcamp.swift in Sources */,
+				8DD6BBFE2A1BDF0A00097098 /* AuthViewModel.swift in Sources */,
+				8D3F125B2A4085D90040C232 /* CoreDataManager.swift in Sources */,
+				8D91295C29ED556F004E15FE /* AsyncAwaitBootcamp.swift in Sources */,
 				8DD42D922937AA07000EC22F /* ViewBuilderBootcamp.swift in Sources */,
 				8DFA304B295C3B2000AB0170 /* ConditionalBootcamp.swift in Sources */,
+				8DD6BBFF2A1BDF0A00097098 /* AuthenticationView.swift in Sources */,
 				8D0B4EB7291963F000B97148 /* FruitsContainer.xcdatamodeld in Sources */,
 				8DC33BB429C9BF6000F45AF7 /* Coordinator.swift in Sources */,
 				8D91295A29EAF62E004E15FE /* AsyncCombine.swift in Sources */,
+				8DC26FA72A2D04CB0063816F /* CheckedContinuationBootcamp.swift in Sources */,
+				8D3F125F2A40A90F0040C232 /* AddMeditationView.swift in Sources */,
 				8D0B4E932919251000B97148 /* ArraysBootCamp.swift in Sources */,
 				8D0B4E85291924FF00B97148 /* BootCampApp.swift in Sources */,
 				8DE12EF6292CF3E6000FE38F /* DeveloperPreview.swift in Sources */,
@@ -785,6 +943,35 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		8DD6BC072A1BE7DF00097098 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8DD6BC082A1BE7DF00097098 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DD6BC072A1BE7DF00097098 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8DD6BC0A2A1BE7DF00097098 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DD6BC072A1BE7DF00097098 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		8DD6BC0C2A1BE7DF00097098 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DD6BC072A1BE7DF00097098 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
 		8D0B4EB5291963F000B97148 /* FruitsContainer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
@@ -793,6 +980,16 @@
 			);
 			currentVersion = 8D0B4EB6291963F000B97148 /* FruitsContainer.xcdatamodel */;
 			path = FruitsContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		8D3F12532A407D5D0040C232 /* MeditationsDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8D3F12542A407D5D0040C232 /* ContactsDataModel.xcdatamodel */,
+			);
+			currentVersion = 8D3F12542A407D5D0040C232 /* ContactsDataModel.xcdatamodel */;
+			path = MeditationsDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
